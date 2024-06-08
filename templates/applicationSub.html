@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Отправка заявки</h2>
+                    {% for cat, msg in get_flashed_messages(True) %}
+                    <div class="flash {{cat}}">{{msg}}</div>
+                    {% endfor %}
+                    <form action="/applicationSub" method="post" class="form-application">
+                        <input type="hidden" value={{ csrf_token }} name="csrf_token">
+                        <input type="hidden" value="" name="latitude" id="latitude">
+                        <input type="hidden" value="" name="longitude" id="longitude">
+                        <input type="hidden" value="" name="city" id="city">
+                        <input type="hidden" value="" name="address" id="address">
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Выберите услугу:</label>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="1">Техническое обслуживание и ремонт электрических сетей</option>
+                                <option value="2">Подключение к электросетям новых объектов</option>
+                                <option value="3">Консультации по вопросам энергосбережения и оптимизации</option>
+                                <option value="4">Обзор безопасности эксплуатации электрооборудования</option>
+                                <option value="5">Разработка решений для оптимизации</option>
+                            </select>
+                        </div>
+                        <div id="map" style="height: 400px;">
+                        </div>
+                        <div class="my-1 ">
+                            <input type="text" readonly id="selected_address" class="w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Комментарий (при необходимости):</label>
+                            <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map').setView([54.9844, 82.9063], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var marker;
+
+    map.on('click', function(e) {
+        if (marker) {
+            map.removeLayer(marker);
+        }
+        marker = L.marker(e.latlng).addTo(map);
+        document.getElementById('latitude').value = e.latlng.lat;
+        document.getElementById('longitude').value = e.latlng.lng;
+
+
+        // Определение адреса по координатам
+        getAddressDetails(e.latlng.lat, e.latlng.lng)
+            .then(({ city, street, houseNumber }) => {
+                document.getElementById('address').value = `${street}, ${houseNumber}`;
+                document.getElementById('selected_address').value = `${street}, ${houseNumber}`;
+                document.getElementById('city').value = city;
+            })
+            .catch(error => {
+                console.error('Ошибка при определении адреса:', error);
+            });
+    });
+});
+
+function getAddressDetails(latitude, longitude) {
+    return fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`)
+        .then(response => response.json())
+        .then(data => {
+            const city = data.address.city || "";
+            const street = data.address.road || "";
+            const houseNumber = data.address.house_number || "";
+            return { city, street, houseNumber };
+        });
+}
+
+function getCityFromAddress(address) {
+    const parts = address.split(',');
+    if (parts.length >= 2) {
+        return parts[1].trim();
+    } else {
+        return '';
+    }
+}
+
+
+</script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+print(request.form)
+
+{% endblock %}

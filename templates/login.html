@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Вход</h2>
+                    {% for cat, msg in get_flashed_messages(True) %}
+                    <div class="flash {{cat}}">{{msg}}</div>
+                    {% endfor %}
+                    <form action="/login" method="post" class="form-login">
+                        <div class="mb-3">
+                            <label for="login" class="form-label">Номер телефона:</label>
+                            <input type="text" id="login" name="phone" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                             <p><img src="{{ url_for('static', filename=captcha_image) }}" alt="Капча"></p>
+                             <label for="kapcha" class="form-label">Введите сгенерированные значения:</label>
+                             <input type="text" name="kapcha" class="form-control" required></p>
+                         </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                        </div>
+                        <div class="d-grid my-3">
+                        <a href="{{ url_for('registration') }}" class="">Регистрация</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

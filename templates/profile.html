@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Личный кабинет</h3>
+            <div>
+                <a href="{{ url_for('logout') }}" class="btn btn-primary">Выход из аккаунта</a>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">На главную</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="surname" value="{{ user[1] }}" disabled>
+            </div>
+                        <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" value="{{ user[2] }}" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Телефон</label>
+                <input type="text" class="form-control" id="phone" value="{{ user[3] }}" disabled>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="user-requests">
+    <h2>Ваши заявки</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID заявки</th>
+                <th>Статус</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for request in user_requests %}
+            <tr>
+                <td>{{ request['id'] }}</td>
+                <td>{{ request['status'] }}</td>
+                <td>{{ request['description'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

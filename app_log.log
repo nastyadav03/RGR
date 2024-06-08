@@ -1,0 +1,10 @@
+2024-06-04 09:56:31,059 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-04 09:56:31,061 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-04 09:56:31,063 | INFO | User passed!
+2024-06-04 09:56:31,169 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 09:56:40,512 | INFO | captcha_code_generated: 907745
+2024-06-04 09:56:40,514 | INFO | captcha_code_got: 907745
+2024-06-04 09:56:40,690 | INFO | User passed!
+2024-06-04 09:56:40,749 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 09:56:43,811 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 09:56:58,524 | INFO | Новая заявка от пользователя 2 успешно создана

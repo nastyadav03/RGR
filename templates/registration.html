@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h2 class="card-title text-center mb-4">Регистрация</h2>
+                    <form action="{{ url_for('user_registration') }}" method="post" class="form-registration">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="surname" class="form-label">Фамилия:</label>
+                            <input type="text" id="surname" name="surname" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Номер телефона:</label>
+                            <input type="text" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                        </div><div class="d-grid my-3">
+                            <a href="{{ url_for('login') }}" class="">Вход</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+Ы

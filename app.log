@@ -1,0 +1,138 @@
+2024-06-04 10:12:33,235 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-04 10:12:33,235 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-04 10:12:33,238 | INFO | User passed!
+2024-06-04 10:14:27,232 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:14:27,540 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:14:27,621 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:14:28,827 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-04 10:14:28,828 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-04 10:14:28,830 | INFO | User passed!
+2024-06-04 10:14:28,994 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:14:38,693 | INFO | captcha_code_generated: 746885
+2024-06-04 10:14:38,696 | INFO | captcha_code_got: 746885
+2024-06-04 10:14:38,869 | INFO | User passed!
+2024-06-04 10:14:38,891 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-04 10:15:31,443 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:15:34,330 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:15:34,344 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:15:35,877 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:15:49,670 | INFO | Новая заявка от пользователя 2 успешно создана. ID заявки: None
+2024-06-04 10:15:54,007 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-04 10:15:54,058 | ERROR | Ошибка 404: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-06-04 10:20:05,194 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-04 10:20:05,194 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-04 10:20:05,194 | INFO | User passed!
+2024-06-04 10:20:15,688 | INFO | captcha_code_generated: 024607
+2024-06-04 10:20:15,693 | INFO | captcha_code_got: 024601
+2024-06-04 10:20:15,694 | WARNING | Капча введена неверно
+2024-06-04 10:20:26,193 | INFO | captcha_code_generated: 569554
+2024-06-04 10:20:26,194 | INFO | captcha_code_got: 569554
+2024-06-04 10:20:26,366 | INFO | User passed!
+2024-06-04 10:20:26,382 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-04 10:20:26,387 | INFO | Заявка 6 перешла в статус "В обработке"
+2024-06-04 10:20:40,246 | INFO | Новая заявка от пользователя 2 успешно создана. ID заявки: None
+2024-06-05 10:56:19,360 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-05 10:56:19,372 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-05 10:56:19,375 | INFO | User passed!
+2024-06-05 10:56:32,169 | INFO | captcha_code_generated: 185543
+2024-06-05 10:56:32,175 | INFO | captcha_code_got: 185543
+2024-06-05 10:56:32,358 | INFO | User passed!
+2024-06-05 10:56:32,377 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-05 10:56:32,384 | INFO | Заявка 6 перешла в статус "Выполняется"
+2024-06-05 10:56:32,391 | INFO | Заявка 7 перешла в статус "Выполняется"
+2024-06-05 10:57:19,665 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-05 10:57:19,666 | INFO | Заявка 6 перешла в статус "Выполняется"
+2024-06-05 10:57:19,667 | INFO | Заявка 7 перешла в статус "Выполняется"
+2024-06-05 10:57:21,408 | INFO | User logged out
+2024-06-05 10:59:16,322 | INFO | captcha_code_generated: 556002
+2024-06-05 10:59:16,326 | INFO | captcha_code_got: 556022
+2024-06-05 10:59:16,327 | WARNING | Капча введена неверно
+2024-06-05 10:59:26,621 | INFO | captcha_code_generated: 468756
+2024-06-05 10:59:26,622 | INFO | captcha_code_got: 468756
+2024-06-05 10:59:26,626 | WARNING | User not found!
+2024-06-05 11:01:11,059 | INFO | Успешная регистрация нового пользователя
+2024-06-05 11:01:20,539 | INFO | captcha_code_generated: 907561
+2024-06-05 11:01:20,541 | INFO | captcha_code_got: 907567
+2024-06-05 11:01:20,543 | WARNING | Капча введена неверно
+2024-06-05 11:01:35,742 | INFO | captcha_code_generated: 800976
+2024-06-05 11:01:35,744 | INFO | captcha_code_got: 800976
+2024-06-05 11:01:35,925 | INFO | User passed!
+2024-06-05 11:04:01,956 | INFO | Новая заявка от пользователя 5 успешно создана. ID заявки: None
+2024-06-05 11:04:21,157 | INFO | Новая заявка от пользователя 5 успешно создана. ID заявки: None
+2024-06-05 11:05:10,219 | INFO | Заявка 9 успешно отозвана
+2024-06-05 11:05:30,466 | INFO | Новая заявка от пользователя 5 успешно создана. ID заявки: None
+2024-06-05 11:07:25,468 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-05 11:07:25,469 | INFO | Ссылка http://127.0.0.1:5000/profile
+2024-06-05 11:07:25,470 | INFO | User passed!
+2024-06-05 11:07:53,949 | INFO | captcha_code_generated: 018145
+2024-06-05 11:07:53,951 | INFO | captcha_code_got: 018145
+2024-06-05 11:07:54,131 | INFO | User passed!
+2024-06-05 11:20:12,129 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-05 11:20:12,130 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-05 11:20:12,131 | INFO | User passed!
+2024-06-06 02:51:02,991 | INFO | captcha_code_generated: 891126
+2024-06-06 02:51:02,997 | INFO | captcha_code_got: 891726
+2024-06-06 02:51:02,999 | WARNING | Капча введена неверно
+2024-06-06 02:51:14,894 | INFO | captcha_code_generated: 861619
+2024-06-06 02:51:14,896 | INFO | captcha_code_got: 867619
+2024-06-06 02:51:14,897 | WARNING | Капча введена неверно
+2024-06-06 02:51:46,073 | INFO | captcha_code_generated: 146286
+2024-06-06 02:51:46,075 | INFO | captcha_code_got: 146286
+2024-06-06 02:51:46,254 | INFO | User passed!
+2024-06-06 02:51:46,276 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-06 02:51:46,277 | INFO | Заявка 6 перешла в статус "Выполняется"
+2024-06-06 02:51:46,278 | INFO | Заявка 7 перешла в статус "Выполняется"
+2024-06-06 02:51:49,729 | INFO | User logged out
+2024-06-06 02:53:31,263 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-06 02:53:31,271 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-06 02:53:31,271 | INFO | User passed!
+2024-06-06 02:54:00,198 | ERROR | Error: Missing cookie "access_token_cookie"
+2024-06-06 02:54:00,198 | INFO | Ссылка http://127.0.0.1:5000/applicationSub
+2024-06-06 02:54:00,198 | INFO | User passed!
+2024-06-06 02:54:09,607 | INFO | captcha_code_generated: 111187
+2024-06-06 02:54:09,609 | INFO | captcha_code_got: 711787
+2024-06-06 02:54:09,610 | WARNING | Капча введена неверно
+2024-06-06 02:54:20,611 | INFO | captcha_code_generated: 734547
+2024-06-06 02:54:20,613 | INFO | captcha_code_got: 734547
+2024-06-06 02:54:20,791 | INFO | User passed!
+2024-06-06 02:54:20,804 | INFO | Заявка 5 перешла в статус "Выполняется"
+2024-06-06 02:54:20,804 | INFO | Заявка 6 перешла в статус "Выполняется"
+2024-06-06 02:54:20,805 | INFO | Заявка 7 перешла в статус "Выполняется"
+2024-06-06 02:54:40,121 | WARNING | Пользователь 2 пытается подать заявку за пределами Новосибирска
+2024-06-07 19:02:10,650 | INFO | captcha_code_generated: 477461
+2024-06-07 19:02:10,656 | INFO | captcha_code_got: 417461
+2024-06-07 19:02:10,656 | WARNING | Капча введена неверно
+2024-06-07 19:03:04,085 | INFO | captcha_code_generated: 299785
+2024-06-07 19:03:04,085 | INFO | captcha_code_got: 1
+2024-06-07 19:03:04,086 | WARNING | Капча введена неверно
+2024-06-07 19:03:27,776 | INFO | captcha_code_generated: 777388
+2024-06-07 19:03:27,776 | INFO | captcha_code_got: 1
+2024-06-07 19:03:27,777 | WARNING | Капча введена неверно
+2024-06-07 19:03:34,757 | INFO | captcha_code_generated: 617965
+2024-06-07 19:03:34,758 | INFO | captcha_code_got: 617965
+2024-06-07 19:03:34,764 | WARNING | User not found!
+2024-06-07 19:04:06,769 | INFO | captcha_code_generated: 938967
+2024-06-07 19:04:06,771 | INFO | captcha_code_got: 938967
+2024-06-07 19:04:06,771 | WARNING | User not found!
+2024-06-07 19:04:26,689 | INFO | captcha_code_generated: 963164
+2024-06-07 19:04:26,689 | INFO | captcha_code_got: 963164
+2024-06-07 19:04:26,840 | WARNING | Wrong password!
+2024-06-07 19:06:13,635 | INFO | captcha_code_generated: 816356
+2024-06-07 19:06:13,636 | INFO | captcha_code_got: 876356
+2024-06-07 19:06:13,637 | WARNING | Капча введена неверно
+2024-06-07 19:06:31,716 | INFO | captcha_code_generated: 005025
+2024-06-07 19:06:31,717 | INFO | captcha_code_got: 005025
+2024-06-07 19:06:31,855 | INFO | User passed!
+2024-06-07 19:06:31,869 | INFO | Заявка 1 перешла в статус "Выполняется"
+2024-06-07 19:06:31,870 | INFO | Заявка 2 перешла в статус "Выполняется"
+2024-06-07 19:06:31,871 | INFO | Заявка 3 перешла в статус "Выполняется"
+2024-06-07 19:06:31,879 | INFO | Заявка 4 перешла в статус "Выполняется"
+2024-06-07 19:06:36,769 | INFO | Заявка 1 перешла в статус "Выполняется"
+2024-06-07 19:06:36,769 | INFO | Заявка 2 перешла в статус "Выполняется"
+2024-06-07 19:06:36,770 | INFO | Заявка 3 перешла в статус "Выполняется"
+2024-06-07 19:06:36,771 | INFO | Заявка 4 перешла в статус "Выполняется"
+2024-06-07 19:07:20,031 | WARNING | Пользователь 4 пытается подать заявку за пределами Новосибирска
+2024-06-07 19:07:42,701 | WARNING | Пользователь 4 пытается подать заявку за пределами Новосибирска
+2024-06-07 19:08:29,891 | WARNING | Пользователь 4 пытается подать заявку за пределами Новосибирска
+2024-06-07 19:09:03,256 | INFO | Новая заявка от пользователя 4 успешно создана. ID заявки: None
+2024-06-07 19:20:01,279 | INFO | User passed!
